@@ -163,8 +163,20 @@
 
   .brand {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 14px;
     line-height: 1;
+  }
+
+  .brand-logo {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
   }
 
   .brand-name {
@@ -393,11 +405,10 @@
     border-top: none;
   }
 
-  .about-visual .badge-mark {
-    font-size: 4rem;
-    color: var(--gold);
-    margin-bottom: 16px;
-    line-height: 1;
+  .about-visual .logo-img {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 24px;
   }
 
   .about-visual h3 {
@@ -755,8 +766,11 @@
 <header>
   <div class="header-inner">
     <a href="#home" class="brand" aria-label="Ink and Iron Apparel Home">
-      <span class="brand-name">Ink<span class="amp">&amp;</span>Iron Apparel</span>
-      <span class="brand-tagline">Wear What You Mean</span>
+      <img src="inknironlogo-3.png" alt="Ink &amp; Iron Apparel logo" class="brand-logo" />
+      <div class="brand-text">
+        <span class="brand-name">Ink<span class="amp">&amp;</span>Iron Apparel</span>
+        <span class="brand-tagline">Wear What You Mean</span>
+      </div>
     </a>
     <nav aria-label="Primary navigation">
       <ul>
@@ -812,7 +826,7 @@
       </div>
 
       <div class="about-visual" aria-hidden="true">
-        <div class="badge-mark">&#9733;</div>
+        <img src="inknironlogo-3.png" alt="Ink &amp; Iron Apparel logo" class="logo-img" />
         <h3>Ink &amp; Iron</h3>
         <div class="est">Est. Texas</div>
         <p class="motto">"Forged with iron. Finished with ink. Worn with pride."</p>
