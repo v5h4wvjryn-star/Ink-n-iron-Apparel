@@ -309,6 +309,94 @@
     flex-wrap: wrap;
   }
 
+  /* ---------- July 4th Collection ---------- */
+  #july4th {
+    background: var(--charcoal);
+  }
+
+  .july4th-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 56px;
+  }
+
+  .july4th-card {
+    background: var(--charcoal-light);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--offwhite);
+    text-decoration: none;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .july4th-card:hover,
+  .july4th-card:focus-visible {
+    transform: scale(1.03);
+    border-color: var(--gold);
+    box-shadow: 0 0 0 2px rgba(201, 136, 42, 0.35), 0 12px 30px rgba(201, 136, 42, 0.25);
+    color: var(--offwhite);
+    outline: none;
+  }
+
+  .july4th-image {
+    background:
+      linear-gradient(135deg, var(--charcoal-lighter), var(--charcoal));
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--gold);
+    overflow: hidden;
+  }
+
+  .july4th-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .july4th-info {
+    padding: 22px 22px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+  }
+
+  .july4th-info h3 {
+    font-size: 1.2rem;
+    color: var(--offwhite);
+    letter-spacing: 0.05em;
+  }
+
+  .july4th-price {
+    color: var(--gold);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-top: auto;
+  }
+
+  .july4th-cta-wrap {
+    text-align: center;
+  }
+
+  @media (max-width: 960px) {
+    .july4th-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .july4th-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   /* ---------- About ---------- */
   #about {
     background: var(--charcoal);
@@ -775,6 +863,7 @@
     <nav aria-label="Primary navigation">
       <ul>
         <li><a href="#home">Home</a></li>
+        <li><a href="#july4th">July 4th</a></li>
         <li><a href="#shop">Shop</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -792,6 +881,108 @@
     <div class="hero-buttons">
       <a href="#shop" class="btn">Shop Now</a>
       <a href="#about" class="btn btn-outline">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JULY 4TH 250TH COLLECTION ============ -->
+<section id="july4th">
+  <div class="container">
+    <h2 class="section-title">Shop The July 4th 250th Collection</h2>
+    <p class="section-subtitle">Heavyweight heritage cotton. Bold designs. Printed in America.</p>
+
+    <div class="july4th-grid">
+
+      <a class="july4th-card"
+         href="https://ink-n-iron-apparel.myshopify.com/products/unisex-garment-dyed-heavyweight-t-shirt?variant=48827982545123"
+         target="_blank" rel="noopener noreferrer">
+        <div class="july4th-image">
+          <img src="/images/products/INI_devil-heard-amen-soldier_tee-print.png"
+               alt="Praying Soldier Tee — Military Faith design printed on a heavyweight t-shirt"
+               loading="lazy" />
+        </div>
+        <div class="july4th-info">
+          <h3>Praying Soldier Tee &mdash; Military Faith</h3>
+          <span class="july4th-price">$36</span>
+        </div>
+      </a>
+
+      <a class="july4th-card"
+         href="https://ink-n-iron-apparel.myshopify.com/products/then-the-devil-heard-amen-patriotic-knight-t-shirt-faith-freedom?variant=48827948040419"
+         target="_blank" rel="noopener noreferrer">
+        <div class="july4th-image">
+          <img src="/images/products/INI_devil-heard-amen-knight_tee-print.png"
+               alt="Patriotic Knight Tee — Faith &amp; Freedom design printed on a heavyweight t-shirt"
+               loading="lazy" />
+        </div>
+        <div class="july4th-info">
+          <h3>Patriotic Knight Tee &mdash; Faith &amp; Freedom</h3>
+          <span class="july4th-price">$36</span>
+        </div>
+      </a>
+
+      <a class="july4th-card"
+         href="https://ink-n-iron-apparel.myshopify.com/products/america-250-of-fafo-eagle-badge-t-shirt-july-4th-250th-anniversary?variant=48827872248035"
+         target="_blank" rel="noopener noreferrer">
+        <div class="july4th-image">
+          <img src="/images/products/INI_america-of-fafo-eagle_tee-print.png"
+               alt="America 250 of FAFO Eagle Badge Tee printed on a heavyweight t-shirt"
+               loading="lazy" />
+        </div>
+        <div class="july4th-info">
+          <h3>America 250 of FAFO &mdash; Eagle Badge Tee</h3>
+          <span class="july4th-price">$36</span>
+        </div>
+      </a>
+
+      <a class="july4th-card"
+         href="https://ink-n-iron-apparel.myshopify.com/products/1776-was-just-the-start-heritage-patriotic-t-shirt-july-4th-250th-anniversary?variant=48827790262499"
+         target="_blank" rel="noopener noreferrer">
+        <div class="july4th-image">
+          <img src="/images/products/INI_1776-was-just-the-start_tee_print.png"
+               alt="1776 Was Just the Start heritage patriotic t-shirt"
+               loading="lazy" />
+        </div>
+        <div class="july4th-info">
+          <h3>1776 Was Just the Start Tee</h3>
+          <span class="july4th-price">$36</span>
+        </div>
+      </a>
+
+      <a class="july4th-card"
+         href="https://ink-n-iron-apparel.myshopify.com/products/america-still-not-sorry-since-1776-t-shirt-patriotic-unisex-tee?variant=48827667448035"
+         target="_blank" rel="noopener noreferrer">
+        <div class="july4th-image">
+          <img src="/images/products/INI_america-still-not-sorry_tee_print.png"
+               alt="America Still Not Sorry Since 1776 patriotic unisex t-shirt"
+               loading="lazy" />
+        </div>
+        <div class="july4th-info">
+          <h3>America Still Not Sorry Since 1776 Tee</h3>
+          <span class="july4th-price">$36</span>
+        </div>
+      </a>
+
+      <a class="july4th-card"
+         href="https://ink-n-iron-apparel.myshopify.com/products/america-250-years-of-freedom-womens-t-shirt-july-4th-250th-anniversary-tee?variant=48827515928803"
+         target="_blank" rel="noopener noreferrer">
+        <div class="july4th-image">
+          <img src="/images/products/INI_250-years-freedom-womens_tee-print.png"
+               alt="America 250 Years of Freedom women's t-shirt"
+               loading="lazy" />
+        </div>
+        <div class="july4th-info">
+          <h3>America 250 &mdash; Women's Tee</h3>
+          <span class="july4th-price">$36</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="july4th-cta-wrap">
+      <a class="btn"
+         href="https://ink-n-iron-apparel.myshopify.com/collections/july-4th"
+         target="_blank" rel="noopener noreferrer">View The Full Collection</a>
     </div>
   </div>
 </section>
